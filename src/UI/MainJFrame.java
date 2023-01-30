@@ -51,6 +51,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jSplitPane1.setBackground(new java.awt.Color(255, 204, 204));
+
         ControlJPanel.setBackground(new java.awt.Color(255, 255, 204));
 
         btnCreate.setText("Create");
@@ -79,21 +81,21 @@ public class MainJFrame extends javax.swing.JFrame {
         ControlJPanelLayout.setHorizontalGroup(
             ControlJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ControlJPanelLayout.createSequentialGroup()
-                .addContainerGap(83, Short.MAX_VALUE)
-                .addGroup(ControlJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCreate, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnUpdate, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnDisplay, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addContainerGap())
+                .addGap(43, 43, 43)
+                .addGroup(ControlJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnDisplay)
+                    .addComponent(btnUpdate)
+                    .addComponent(btnCreate))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
         ControlJPanelLayout.setVerticalGroup(
             ControlJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ControlJPanelLayout.createSequentialGroup()
                 .addGap(68, 68, 68)
                 .addComponent(btnCreate)
-                .addGap(50, 50, 50)
+                .addGap(46, 46, 46)
                 .addComponent(btnUpdate)
-                .addGap(48, 48, 48)
+                .addGap(52, 52, 52)
                 .addComponent(btnDisplay)
                 .addContainerGap(65, Short.MAX_VALUE))
         );
